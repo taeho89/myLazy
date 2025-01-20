@@ -25,10 +25,15 @@ lspconfig.util.default_config = vim.tbl_extend("force", lspconfig.util.default_c
 require("lspconfig").clangd.setup({
 	cmd = {
 		"clangd",
+		"--header-insertion=never",
+		-- "~/.config/clangd/config.yaml",
 		-- "-I",
 		-- "/home/takwak/Projects/mygit/3_Circle/philosophers/philo/includes", -- 헤더 파일 경로
 		-- "-I", "/home/takwak/Sources/your_project/external/include",  -- 추가 헤더 경로
-		"--compile-commands-dir",
-		"/home/takwak/Projects/mygit/3_Circle/philosophers/philo", -- 프로젝트 루트 경로
+		-- "--compile-commands-dir",
+		-- "/home/takwak/Projects/mygit/3_Circle/philosophers/philo_bonus/", -- 프로젝트 루트 경로
+	},
+	handlers = {
+		["textDocument/signatureHelp"] = function() end,
 	},
 })
