@@ -1,8 +1,8 @@
-vim.api.nvim_set_keymap("n", "<F1>", "<Nop>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<F1>", ":Stdheader<CR>", { noremap = true, silent = true })
-
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+
+vim.api.nvim_set_keymap("n", "<F1>", "<Nop>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<F1>", ":Stdheader<CR>", { noremap = true, silent = true })
 
 -- require("cmp").setup({
 -- 	completion = {
