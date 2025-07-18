@@ -1,0 +1,23 @@
+USER=takwak
+MAIL=takwak@student.42gyeongsan.kr
+
+export USER
+export MAIL
+
+alias nvim='~/Sources/nvim-linux64/bin/nvim'
+alias val='valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes '
+alias rmswp='rm /home/takwak/.local/state/nvim/swap/*'
+alias lsswp='ls -l /home/takwak/.local/state/nvim/swap'
+
+alias poke='python3 ~/Sources/poke/pokemon-colorscripts.py -r --no-title'
+
+poke
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias git_graph="git log --oneline --graph --all"
+
