@@ -9,6 +9,7 @@ return {
 					"c",
 					"cpp",
 					"lua",
+					"prisma",
 					"vim",
 					"bash",
 					"python",
@@ -16,6 +17,8 @@ return {
 					"typescript",
 					"html",
 					"css",
+					"gitignore",
+					"sql",
 				},
 				highlight = {
 					enable = true,
