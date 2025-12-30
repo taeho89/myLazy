@@ -6,8 +6,8 @@ vim.g.o_shiftwidth = vim.o.shiftwidth
 
 -- Variables to store the alternate settings
 vim.g.a_expandtab = false
-vim.g.a_tabstop = 4
-vim.g.a_shiftwidth = 4
+vim.g.a_tabstop = 2
+vim.g.a_shiftwidth = 2
 
 local function check_settings()
 	if vim.o.expandtab ~= vim.g.o_expandtab then
