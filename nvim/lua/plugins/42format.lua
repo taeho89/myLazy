@@ -61,6 +61,6 @@ vim.api.nvim_create_user_command("Toggle42format", function()
 end, {})
 vim.api.nvim_set_keymap("n", "<F3>", ":Toggle42format<CR>", { noremap = true, silent = true })
 
-toggle_indent_settings(true)
+-- toggle_indent_settings(true)
 
 return M
